@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1649165514 source:c:\users\sziráczki soma\desktop\egyetem\bk6qe8_openclose\main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<fcntl.h>
+	<string.h>
+
