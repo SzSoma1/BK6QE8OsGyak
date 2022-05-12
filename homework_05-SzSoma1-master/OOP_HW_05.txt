@@ -1,0 +1,24 @@
+
+5. heti házi feladat:
+
+- Egészítse ki az előző héten definiált Book osztályt 2 konstruktorral. 
+Az egyik konstruktornak a könyv minden adatát meg kell adni (szerző, cím, kiadás éve, ár sorrendben), a másiknak csak a szerzőt és a címet, az ár 2500 Ft, 
+a megjelenés éve pedig az aktuális év (dátumkezeléssel!).
+- Definiálja felül a toString metódust a displayInfo metódus tartalmával.
+- Írjon osztályszintű összehasonlító metódust (comparePublicationDate), amely 1-et ad vissza, ha az első paraméterként
+megadott könyv az újabb, 2-t ha a második, és 0-t, ha ugyanabban az évben jelentek meg.
+
+A használó osztályban hozzon létre 2 könyvet (a 2 konstruktort felhasználva) és
+jelenítse meg az adataikat a toString metódust használva. Hasonlítsa össze a két könyv megjelenési évét.
+
+Segítség:
+
+Dátumkezelés (Java 6,7):
+java.util.Date today = new java.util.Date();//Fri Jun 17 14:54:28 PDT 2016
+java.util.Calendar cal = java.util.Calendar.getInstance(); //helyi idő
+cal.setTime(today);
+int year = cal.get(java.util.Calendar.YEAR);
+	
+Dátumkezelés (Java 8):
+java.time.LocalDate currentDate = java.time.LocalDate.now(); // mai dátum
+int year = currentDate.getYear(); //mai dátumból az év

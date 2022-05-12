@@ -1,0 +1,34 @@
+plugins {
+	id 'java'
+}
+
+compileJava.options.encoding = "Cp1252"
+compileTestJava.options.encoding = "Cp1252"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testImplementation('org.junit.jupiter:junit-jupiter:5.7.1')
+}
+
+test {
+	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+    test {
+        java {
+            srcDirs = ["tests"]
+        }
+    }
+}
